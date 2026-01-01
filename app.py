@@ -22,7 +22,7 @@ def about_us():
 def View_top_20():
     return render_template('index.html')
 
-@app.route('/top20')
+@app.route('/view-top-20')
 def index():
     return render_template('index.html',
                            book_name=list(popular_df['Book-Title'].values),
